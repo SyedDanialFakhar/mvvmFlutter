@@ -14,8 +14,7 @@ class FetchDataException extends AppExceptions {
 }
 
 class BadRequestException extends AppExceptions {
-  BadRequestException([String? message])
-      : super(message, "Invalid Request");
+  BadRequestException([String? message]) : super(message, "Invalid Request");
 }
 
 class UnAuthorizedException extends AppExceptions {
@@ -24,7 +23,5 @@ class UnAuthorizedException extends AppExceptions {
 }
 
 class InvalidInputException extends AppExceptions {
-  InvalidInputException([String? message])
-      : super(message, "Invalid Request");
+  InvalidInputException([String? message]) : super(message, "Invalid Request");
 }
-
