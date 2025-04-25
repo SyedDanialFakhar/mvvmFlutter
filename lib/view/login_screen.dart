@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvvmflutter/utils/routes/routes_name.dart';
+import 'package:mvvmflutter/utils/utils.dart';
 import 'package:mvvmflutter/view/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -19,10 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Center(
           child: InkWell(
               onTap: () {
-                Navigator.pushNamed(
-                  context,
-                  RoutesName.home,
-                );
+                Utils.toastMessage("No Internet Connection");
               },
               child: Text("Click It"))),
     );
